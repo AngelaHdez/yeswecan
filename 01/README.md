@@ -15,8 +15,8 @@ Instala y configura el cliente de GitHub
 
 Bájate el programa para manejarte con GitHub, desde pc o mac:
 
-windows.github.com
-mac.windows.com
+http://windows.github.com
+http://mac.windows.com
 
 Y configúralo con tu cuenta, si todo ha ido bien verás los repositorios en remoto a los que tienes acceso.
 
