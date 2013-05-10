@@ -28,7 +28,7 @@ Clona este repositorio en local y trabaja con él
 
 Ahora podrás clonar el repositorio mirai-wordpress/yeswecan a tu local y podrás trabajar con él.
 
-Una vez lo tengas clonado, entra en la carpeta de esta tarea 01 y añade un documento con tu nombre y algo de texto, por ejemplo "Hola Mundo!". Guarda el archivo y súbelo al repositorio común (haz commit).
+Una vez lo tengas clonado, entra en la carpeta de esta tarea 01 y añade un documento con tu nombre y algo de texto, por ejemplo "Hola Mundo!". Guarda el archivo y súbelo al repositorio común (haz commit), luego sincroniza tus cambios (haz sync).
 
 Comprueba que puedes ver los cambios desde la web:
 
