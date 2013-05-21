@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <title>Info por consola - console.log</title>
@@ -10,7 +10,6 @@
       <h1>console.log</h1>      
     </header>
     <nav>
-      <ul><li></li></ul>
     </nav>
     <div id="content"> 
       <article>
@@ -28,7 +27,9 @@
     </div>
     <footer id="footer"></footer>
 	<script type="text/javascript">
-		console.log('Versión de jQuery: 2.0.0');	
+		if (window.console) {
+			console.log('You are running jQuery version: ' + jQuery.fn.jquery)
+		}	
 	</script>
   </body>
 </html>
