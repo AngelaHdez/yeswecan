@@ -2,9 +2,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <html>
   <head>
-	<title><!-- Your Title --></title>
+	 <title>Ejercicio 02 - Mostrar por consola la versión jQuery</title>
+	<!-- jQuery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   </head>
- <body>
+  <body>
     <header>
      <!-- ... -->
     </header>
@@ -17,5 +19,12 @@
     <footer>
      <!-- ... -->
     </footer>
- </body>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			alert("You are using the version of jQuery " + jQuery.fn.jquery); 
+		});
+	</script>
+	
+  </body>
 </html>
