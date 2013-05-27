@@ -1,0 +1,125 @@
+/* CSS Document */
+*{
+	margin:0px;
+	padding:0px;
+}
+/*-----ESTILOS FORMULARIO---*/
+
+#miformulario{
+	 border: 1px #999999;
+	 border-radius: 0 25px 0 25px;
+	 box-shadow:0px 0px 25px white;
+	-moz-box-shadow:0px 0px 25px white;
+	-webkit-box-shadow:0px 0px 25px white;
+	background: rgba(229,222,222,1);
+   float: left;
+    margin: 10px;
+    padding: 15px;
+    width: 65%;
+}
+
+fieldset{
+	 border: 1px solid rgb(153, 153, 153);
+	 border-radius: 0 25px 0 25px;
+	 padding:10px;
+	 margin:10px;
+	 }
+
+legend{
+	 color: #666666;
+    font-size: 1.2em;
+    margin: 10px 5px;
+    text-shadow: 1px 2px 2px #FFFFFF;
+    text-transform: uppercase;
+}
+
+label{
+	color:#333;
+	text-shadow:1px 1px 0 #fff;
+	display:block;
+	}
+
+#datos-personales label{
+	display:inline-block;
+	float:left;
+	line-height:40px;
+	width:20%;
+	}
+
+
+
+	
+#miformulario #datos-personales input{
+	border-radius: 5px 5px;
+	display:block;
+	width:40%;
+	height:30px;
+	}
+	
+	
+	
+#miformulario input[type="checkbox"]{
+	border-radius: 5px 5px;
+	height:18px;
+	width:5%;
+	}	
+	
+
+input:focus {
+	box-shadow:0px 0px 10px black;
+	-moz-box-shadow:0px 0px 10px black;
+	-webkit-box-shadow:0px 0px 10px black;
+	transition: background 1s, box-shadow 1s;
+	-moz-transition: background 1s, box-shadow 1s;
+	-webkit-transition: background 1s, box-shadow 1s;
+	-o-transition: background 1s, box-shadow 1s;
+	}		
+	
+input[type="submit"]{
+	background: rgb(197,197,229);
+background: -moz-linear-gradient(top,  rgba(197,197,229,1) 0%, rgba(137,137,186,1) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(197,197,229,1)), color-stop(100%,rgba(137,137,186,1)));
+background: -webkit-linear-gradient(top,  rgba(197,197,229,1) 0%,rgba(137,137,186,1) 100%);
+background: -o-linear-gradient(top,  rgba(197,197,229,1) 0%,rgba(137,137,186,1) 100%);
+background: -ms-linear-gradient(top,  rgba(197,197,229,1) 0%,rgba(137,137,186,1) 100%);
+background: linear-gradient(to bottom,  rgba(197,197,229,1) 0%,rgba(137,137,186,1) 100%);
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5c5e5', endColorstr='#8989ba',GradientType=0 );
+
+
+  font-size: 19px;
+  border-radius:5px 5px;
+    height: 35px;
+    text-shadow: 1px 1px 1px #CCCCCC;
+    text-transform: uppercase;
+	margin-left:190px;
+    width: 200px;
+
+	}
+	
+input[type="submit"]:hover{
+	color:#333;
+	background: rgb(137,137,186);
+background: -moz-linear-gradient(top,  rgba(137,137,186,1) 0%, rgba(197,197,229,1) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(137,137,186,1)), color-stop(100%,rgba(197,197,229,1)));
+background: -webkit-linear-gradient(top,  rgba(137,137,186,1) 0%,rgba(197,197,229,1) 100%);
+background: -o-linear-gradient(top,  rgba(137,137,186,1) 0%,rgba(197,197,229,1) 100%);
+background: -ms-linear-gradient(top,  rgba(137,137,186,1) 0%,rgba(197,197,229,1) 100%);
+background: linear-gradient(to bottom,  rgba(137,137,186,1) 0%,rgba(197,197,229,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8989ba', endColorstr='#c5c5e5',GradientType=0 );
+	box-shadow:0px 0px 10px black;
+	-moz-box-shadow:0px 0px 10px black;
+	-webkit-box-shadow:0px 0px 10px black;
+	transition: background 1s, box-shadow 1s;
+	-moz-transition: background 1s, box-shadow 1s;
+	-webkit-transition: background 1s, box-shadow 1s;
+	-o-transition: background 1s, box-shadow 1s;
+    -moz-transform: scale(1.1,1.1);
+	-webkit-transform: scale(1.1,1.1);
+	-o-transform: scale(1.1,1.1);
+    transform:scale(1.1,1.1);	
+	-moz-transition: background 1s, opacity 1s, box-shadow 1s, -moz-transform 1s;
+	-webkit-transition: background 1s, opacity 1s, box-shadow 1s, -webkit-transform 1s;
+	-o-transition: background 1s, opacity 1s, box-shadow 1s, -o-transform 1s;
+	transition: background 1s, opacity 1s, box-shadow 1s, transform 1s;
+	}
