@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tarea 3 - Formulario con HTML5</title>
+		<script src="http://code.jquery.com/jquery-2.0.0.js"></script>
+		
+<script type="text/javascript">
+	var nombreUser = #nombre
+	
+</script>
+
+<style type="text/css">
+	#mi_respuesta {opacity: 0;}
+</style>
+
+		
+	</head>
+
+	<body>
+		<div id="container">
+			<header>
+				<h1>Inscríbete a nuestra Newsletter</h1>
+			</header>
+			
+			<nav>
+				
+			</nav>
+			
+			<section>
+				<header>
+					<h2>Necesitamos tus datos:</h2>
+				</header>
+				<article>
+						
+					<form id="mi_formulario" action="">
+
+						<p>
+							<label for="nombre">Nombre<span class="star">*</span>: </label>
+							<input type="text" name="nombre" id="nombre" placeholder="Tu nombre" autofocus required>
+						</p>
+
+						<p>
+							<label for="date">Edad<span class="star">*</span>: </label>
+							<input type="number" name="date" id="date" min="1" max="120" maxlength="3" required/> 
+						</p>
+
+						<p>
+							<label for="email">Email<span class="star">*</span>: </label>
+							<input type="email" name="email" id="email" placeholder="correo@dominio.com" required>
+						</p>
+
+						<p>
+							<label for="comments">Comentarios: </label>
+							<textarea type="text" name="comments" id="comments" placeholder="¿Quieres añadir algo más? Máximo 150 caracteres." cols="40" rows="6" maxlength="150"></textarea>
+						</p>
+
+						<input type="submit" value="Enviar" id="send">
+
+						
+					</form>
+
+					<p class="required-fields">* Campos obligatorios</p>
+
+					<div id="mi_respuesta">
+						<h2>Enhorabuena!!!</h2>
+					</div>
+					
+					
+				</article>
+			</section>
+			
+			<footer>
+				<script type="text/javascript">
+					$(document).ready(function()
+					{
+						$('#send').click(function() {
+							$('#mi_formulario').animate({opacity:'0'},1000);
+							$('#mi_respuesta').delay(1200).animate({opacity:'1'},1000);
+						});
+					});
+				</script>
+			</footer>	
+		</div>
+	</body>
+	
+</html>
