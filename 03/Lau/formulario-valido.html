@@ -5,29 +5,6 @@
 <meta name="description" content="Tareas con Github">
 <title="Un formulario chulo en HTML5"></title>
 <link rel="stylesheet" type="text/css" href="styles2.css">
-    <script>
-        function iniciar() {
-        nombre1=document.getElementById("nombre");
-        nombre2=document.getElementById("edad");
-        nombre3=document.getElementById("correo");
-        nombre1.addEventListener("input", validacion, false);
-        nombre2.addEventListener("input", validacion, false);
-        nombre3.addEventListener("input", validacion, false);
-        validacion();
-    }
-    function validacion() {
-        if (nombre1.value=='' && nombre2.value==''){
-            nombre1.setCustomValidity('Que se te olvida poner tu nombre atontao!');
-            //nombre1.style.background='#666';
-        }else{
-            nombre1.setCustomValidity('');
-            //nombre1.style.background='#ccc';
-        }
-    }
-    
-    window.addEventListener("load", iniciar, false);
-    
-    </script>
 </head>
 <body>
     <section>
