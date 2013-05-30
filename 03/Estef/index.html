@@ -1,18 +1,12 @@
 ﻿<!DOCTYPE html>
-<html>
-	<head>
-		<title>Tarea 3 - Formulario con HTML5</title>
-		<script src="http://code.jquery.com/jquery-2.0.0.js"></script>
-		
-<script type="text/javascript">
-	var nombreUser = #nombre
-	
-</script>
-
-<style type="text/css">
-	#mi_respuesta {opacity: 0;}
-</style>
-
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Tarea 3 - Formulario con HTML5</title>
+	<link rel="stylesheet" media="screen" href="styles.css" >
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
 		
 	</head>
 
@@ -54,7 +48,7 @@
 							<textarea type="text" name="comments" id="comments" placeholder="¿Quieres añadir algo más? Máximo 150 caracteres." cols="40" rows="6" maxlength="150"></textarea>
 						</p>
 
-						<input type="submit" value="Enviar" id="send">
+						<button class="submit" type="submit" value="Enviar" id="send">
 
 						
 					</form>
