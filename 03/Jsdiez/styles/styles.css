@@ -11,9 +11,9 @@ body{
 
 #content, #header {
 	position:absolute;
-	width:500px;
+	width:350px;
 	left:50%;
-	margin-left:-250px;
+	margin-left:-175px;
 }
 #header {
 	background: url('../img/chocolate-icon.png');
@@ -47,24 +47,45 @@ h1 {
 }
 #content{
 	background:#4ecdc4;
-	border-radius:4px;
-	-webkit-border-radius:4px;
+	border-radius:10px;
+	-webkit-border-radius:10px;
 	top:50%;
 	margin-top:-230px;
-	height:500px;
 	display:none;
 	padding: 20px 15px;
 }
 label{
 	color:#FFF;
 	font-family: 'Merienda', cursive;
-	float:left;
+	display:inline-block;
+	width:80px;
+	margin-left:20px;
+}
+input, textarea {
+	border:0;
+	margin-bottom: 10px;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	padding:6px 10px;
 }
 input {
-	padding:4px 8px;
+	display:inline-block;
+	width:150px;
 }
-button {
+.desc {
 	margin-top:20px;
+	padding:10px 0;
+	border-top:2px dashed #249991;
+	width:90%;
+	text-align:center;
+}
+textarea {
+	width:80%;
+	margin-left:20px;
+}
+
+button, .send_form {
+	margin:20px auto;
 	background:#44b3ab;
 	border:0;
 	color:#FFF;
@@ -76,11 +97,15 @@ button {
 	-moz-box-shadow: 0px 0px 0px 1px #4e8381 inset, 0px 0px 0px 2px #74b6b4 inset, 0px 4px 0px 0px #4a7c7b, 0px 5px 0px 0px #355655, 0px 8px 0px 0px rgba(0,0,0,.15);
 	-ie-box-shadow: 0px 0px 0px 1px #4e8381 inset, 0px 0px 0px 2px #74b6b4 inset, 0px 4px 0px 0px #4a7c7b, 0px 5px 0px 0px #355655, 0px 8px 0px 0px rgba(0,0,0,.15);
 	box-shadow: 0px 0px 0px 1px #4e8381 inset, 0px 0px 0px 2px #74b6b4 inset, 0px 4px 0px 0px #4a7c7b, 0px 5px 0px 0px #355655, 0px 8px 0px 0px rgba(0,0,0,.15);
+	display:block;
 }
-button:hover {
+#content .send_form {
+	margin:10px auto;
+}
+button:hover, .send_form:hover {
 	background-color: #73c2c0;
 }
-button:active {
+button:active, .send_form:active {
 	background-color: #5a9896;
 	-webkit-box-shadow: 0px 0px 0px 1px #589391 inset, 0px 0px 0px 2px #65a9a7 inset, 0px 1px 0px 0px #355655, 0px 3px 0px 0px rgba(0,0,0,.15);
 	-moz-box-shadow: 0px 0px 0px 1px #589391 inset, 0px 0px 0px 2px #65a9a7 inset, 0px 1px 0px 0px #355655, 0px 3px 0px 0px rgba(0,0,0,.15);

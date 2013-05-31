@@ -10,7 +10,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Merienda:400,700' rel='stylesheet' type='text/css'>
 	<link href="styles/styles.css" rel="stylesheet" type="text/css">
 	<script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-	<script type='text/javascript' src="scripts/from-validate.js"></script>
+	<script type='text/javascript' src="scripts/form-validate.js"></script>
 	<script type='text/javascript' src="scripts/chuminadas-varias.js"></script>
   </head>
   <body>
@@ -19,19 +19,20 @@
 		<button class="call_form" role="button">Suscribete</button> 
     </header>
     <div id="content"> 
-		<form id="html5_form">
+		<form action="#">
 			<fieldset>
 				<label for="form_name">Nombre:</label>
-				<input id="form_name" name="form_name" type="text" class="required alphanumunderscorehyphen">
+				<input id="form_name" name="form_name" type="text" class="required" required autofocus placeholder="Nombre">
 				<label for="form_age">Edad:</label>
-				<input id="form_age" name="form_age" type="text" class="required alphanumunderscorehyphen">
-				<label for="form_text">Para ganarte la chocholatina tienes que convencerme:</label>
+				<input id="form_age" name="form_age" type="number" min="18" max="50" class="required" required placeholder="Edad">
+				<label for="form_mail">Email:</label>
+				<input id="form_mail" name="form_mail" type="email" class="required"required  placeholder="Email">
+				<label for="form_text" class="desc">Para ganarte la chocholatina tienes que convencerme:</label>
 				<textarea id="form_text" name="form_text" rows="5" cols="25"></textarea>
 			</fieldset>
-
-				<button value="#form_main" class="" role="button">Enviar</button>
-			</div>
+			<input type="submit" class="send_form" value="Enviar">
 		</form>
+		<div class="mensaje"></div>
     </div>
   </body>
 </html>

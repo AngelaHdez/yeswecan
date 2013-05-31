@@ -8,6 +8,8 @@
 		jQuery('.call_form').fadeOut('slow');
 		jQuery('#header').addClass('visible-form');
 		jQuery('#header').animate({
+			top: '0',
+			marginTop: '0'
 		}, 1000, function() {
 			jQuery('#content').fadeIn('slow');	
 		})
