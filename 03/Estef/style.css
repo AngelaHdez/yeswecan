@@ -100,15 +100,7 @@ section h2 {
 
 
 /* Botón Enviar */
-button.submit {
-	background: rgb(230,240,163); /* Old browsers */
-	background: -moz-linear-gradient(top,  rgba(230,240,163,1) 0%, rgba(210,230,56,1) 50%, rgba(195,216,37,1) 51%, rgba(219,240,67,1) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(230,240,163,1)), color-stop(50%,rgba(210,230,56,1)), color-stop(51%,rgba(195,216,37,1)), color-stop(100%,rgba(219,240,67,1))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  rgba(230,240,163,1) 0%,rgba(210,230,56,1) 50%,rgba(195,216,37,1) 51%,rgba(219,240,67,1) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  rgba(230,240,163,1) 0%,rgba(210,230,56,1) 50%,rgba(195,216,37,1) 51%,rgba(219,240,67,1) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  rgba(230,240,163,1) 0%,rgba(210,230,56,1) 50%,rgba(195,216,37,1) 51%,rgba(219,240,67,1) 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  rgba(230,240,163,1) 0%,rgba(210,230,56,1) 50%,rgba(195,216,37,1) 51%,rgba(219,240,67,1) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6f0a3', endColorstr='#dbf043',GradientType=0 ); /* IE6-9 */
+button.submit, #miboton {
     border: 1px solid #F1F1F1;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
@@ -120,7 +112,18 @@ button.submit {
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
     width: 90%;
 }
-button.submit:hover {
+button.submit, #miboton:hover {
+	background: rgb(230,240,163); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(230,240,163,1) 0%, rgba(210,230,56,1) 50%, rgba(195,216,37,1) 51%, rgba(219,240,67,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(230,240,163,1)), color-stop(50%,rgba(210,230,56,1)), color-stop(51%,rgba(195,216,37,1)), color-stop(100%,rgba(219,240,67,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(230,240,163,1) 0%,rgba(210,230,56,1) 50%,rgba(195,216,37,1) 51%,rgba(219,240,67,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(230,240,163,1) 0%,rgba(210,230,56,1) 50%,rgba(195,216,37,1) 51%,rgba(219,240,67,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(230,240,163,1) 0%,rgba(210,230,56,1) 50%,rgba(195,216,37,1) 51%,rgba(219,240,67,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(230,240,163,1) 0%,rgba(210,230,56,1) 50%,rgba(195,216,37,1) 51%,rgba(219,240,67,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6f0a3', endColorstr='#dbf043',GradientType=0 ); /* IE6-9 */
+	cursor: pointer; 
+}
+button.submit:hover, #miboton {
 	background: rgb(157,213,58); /* Old browsers */
 	background: -moz-linear-gradient(top,  rgba(157,213,58,1) 0%, rgba(161,213,79,1) 50%, rgba(128,194,23,1) 51%, rgba(124,188,10,1) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(157,213,58,1)), color-stop(50%,rgba(161,213,79,1)), color-stop(51%,rgba(128,194,23,1)), color-stop(100%,rgba(124,188,10,1))); /* Chrome,Safari4+ */
@@ -136,3 +139,19 @@ button.submit:active {
 	box-shadow: 0 0 10px 5px #444 inset; 
 	-webkit-box-shadow: 0 0 10px 5px #444 inset; 
 }
+
+
+
+.yuju {font-family: trebuchet ms;}
+
+#miboton {display: block; margin: 10px auto;}
+#miboton:hover {}
+
+
+
+
+
+
+
+
+
