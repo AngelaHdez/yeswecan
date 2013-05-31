@@ -8,7 +8,6 @@
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-		
 	</head>
 
 	<body>
@@ -58,7 +57,7 @@
 					{
 						$("#send").click(function() {
 							var userName = $("#nombre").val();
-							alert('Enhorabuena ' + userName + '!' + ' ' + 'Te has suscrito correctamente a nuestra Newsletter');
+							$('#mi_formulario').html('<p class="yuju">Enhorabuena ' + userName + '!' + ' ' + 'Te has suscrito correctamente a nuestra Newsletter</p>' + '<button id="miboton" value="Page" onclick="location.href="/index.html">Volver</button>');
 						});
 					});
 				</script>
