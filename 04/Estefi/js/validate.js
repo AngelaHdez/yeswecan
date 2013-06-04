@@ -1,5 +1,4 @@
 ﻿$(document).ready(function(){  
-
 /*Añadir clase si el input está vacío*/
 	/*if($("input").val().length == 0) {
 		$("#submit").addClass("disabled");
@@ -7,7 +6,6 @@
 		$("#submit").removeClass("disabled");
 	}*/
 /*-----------------------------------*/	
-
 
 /*Cambiar el color de la sombra dependiendo del estado del input*/
 	$("input[type=text]").focusin(function(){
@@ -24,9 +22,6 @@
 	});
 /*--------------------------------------------------------------*/	
 
-
-
-	
 /*Validar formulario*/
 	$("#formulario").submit(function () {  
 		if($("#nombre").val().length == 0) {  
@@ -41,11 +36,7 @@
 			alert("La localidad es obligatoria");  
 			return false;  
 		}  
-		return false;  
 	});	
 /*------------------*/	
-
-	
-	
 	
 });
