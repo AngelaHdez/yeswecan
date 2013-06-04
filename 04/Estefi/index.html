@@ -1,0 +1,37 @@
+﻿<html>
+<head>
+	<title>Formularien con Jqueryen</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Life+Savers:400,700' rel='stylesheet' type='text/css'>
+	<script src="http://code.jquery.com/jquery-2.0.0.js"></script>
+</head>
+<body>
+
+	<div id="container">
+		<form name="formulario" id="formulario" class="formulario" action="respuesta.html" method="get">  
+			<fieldset>
+				<label>Nombre <span>(*)</span></label>  
+				<input name="nombre" id="nombre" type="text" />
+				<br />
+				<label>Apellidos <span>(*)</span></label>  
+				<input name="apellidos" id="apellidos" type="text" /> 
+				<br />
+				<label>Localidad <span>(*)</span></label>  
+				<input name="localidad" id="localidad" type="text" /> 
+				<br />
+
+				<input name="submit" id="submit" type="submit" value="Enviar" /> 
+				<!--<input name="reset" id="reset" type="reset" value="Limpiar datos" />-->
+			</fieldset>
+		</form>  
+	</div>
+
+	<div id="footer">
+		<script src="js/validate.js"></script>
+	</div>
+
+	
+</body>
+</html>
+
+
