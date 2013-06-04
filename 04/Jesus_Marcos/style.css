@@ -156,3 +156,10 @@ box-shadow: 0 0px 3px #222222, 0 0 0 2px #FEB6B6 inset;
     margin-top: 80px;
     text-align: center;
 }
+.volver{
+    display: block;
+    font-size: 13px;
+    margin: 0 auto;
+    position: relative;
+    width: 151px;
+}
