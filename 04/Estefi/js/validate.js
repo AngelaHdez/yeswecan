@@ -19,6 +19,11 @@
 	});
 	$("input[type=text]").focusout(function(){
 		$(this).css('box-shadow', '0 0 0 0');
+		if($(this).val().length > 0) {  
+			$(this).css('background', '#B4EFA0');
+		} else {  
+			$(this).css('background', '#ED9E9E');
+		} 
 	});
 /*--------------------------------------------------------------*/	
 
