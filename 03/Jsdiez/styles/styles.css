@@ -49,8 +49,7 @@ h1 {
 	background:#4ecdc4;
 	border-radius:10px;
 	-webkit-border-radius:10px;
-	top:50%;
-	margin-top:-230px;
+	margin-top:230px;
 	display:none;
 	padding: 20px 15px;
 }
@@ -111,4 +110,15 @@ button:active, .send_form:active {
 	-moz-box-shadow: 0px 0px 0px 1px #589391 inset, 0px 0px 0px 2px #65a9a7 inset, 0px 1px 0px 0px #355655, 0px 3px 0px 0px rgba(0,0,0,.15);
 	-ie-box-shadow: 0px 0px 0px 1px #589391 inset, 0px 0px 0px 2px #65a9a7 inset, 0px 1px 0px 0px #355655, 0px 3px 0px 0px rgba(0,0,0,.15);
 	box-shadow: 0px 0px 0px 1px #589391 inset, 0px 0px 0px 2px #65a9a7 inset, 0px 1px 0px 0px #355655, 0px 3px 0px 0px rgba(0,0,0,.15);
+}
+
+
+.mensaje {
+	text-align:center;
+	color:#FFF;
+	font-family: 'Merienda', cursive;
+}
+.mensaje span {
+	font-size:34px;
+	display:block;
 }

@@ -13,6 +13,5 @@
 		}, 1000, function() {
 			jQuery('#content').fadeIn('slow');	
 		})
-	});
-
+	});	
 })
