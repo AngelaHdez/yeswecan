@@ -8,24 +8,24 @@
 	
 	 form.submit(function(e){
 	 
-		$("p.poblacionError").empty();
-		$("p.apellidosError").empty();
-		$("p.nombreError").empty();
+		$("p.poblacionError").css({display:"none"});
+		$("p.nombreError").css({display:"none"});
+		$("p.apellidosError").css({display:"none"});
 		
 		if (inputNombre.val() == "")
 		{
 			e.preventDefault();
-			$("p.nombreError").append("El nombre es obligatorio");
+			$("p.nombreError").fadeIn("slow");
 		}
 		if (inputApellidos.val() == "")
 		{
 			e.preventDefault();
-			$("p.apellidosError").append("Los apellidos son obligatorios");
+			$("p.apellidosError").fadeIn("slow");
 		}
 		if (inputPoblacion.val() == "")
 		{
 			e.preventDefault();
-			$("p.poblacionError").append("La población es obligatoria");
+			$("p.poblacionError").fadeIn("slow")
 		}
 	});
 });

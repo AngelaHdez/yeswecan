@@ -7,24 +7,24 @@
     <body>
 
         <form id="formOne" action="respuesta.html" method="get">
-            <h1>Validar Formulario html</h1>
+            <h1>Formulario html</h1>
             <h2>Los campos marcados con * son obligatorios</h2>
 
             <fieldset>
                     <ul>
                         <li>
                             <label for="nombre">Nombre *</label>
-							<p class="nombreError"></p>
-                            <input type="text" id="nombre" placeholder="Tu nombre" name="nombre" title="Escribe tu nombre">
+							<p class="nombreError error" style="display:none;">El nombre es obligatorio</p>
+                            <input type="text" id="nombre" placeholder="Tu nombre.." name="nombre" title="Escribe tu nombre">
                         </li>
                         <li>
                             <label for="apellidos">Apellidos *</label>
-							<p class="apellidosError"></p>
-                            <input type="text" id="apellidos" name="apellidos" title="Escribe tu nombre">
+							<p class="apellidosError error" style="display:none;">Los apellidos son obligatorios</p>
+                            <input type="text" id="apellidos" placeholder="Tus apellidos.." name="apellidos" title="Escribe tu nombre">
                         </li>
                         <li>
                             <label for="poblacion">Población *</label>
-							<p class="poblacionError"></p>
+							<p class="poblacionError error" style="display:none;">La población es obligatoria</p>
                             <input type="text" id="poblacion" placeholder="De donde eres.." name="poblacion" title="Escribe tu poblacion">
                         </li>
                     </ul>
