@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Tarea 3 - Formulario con HTML5</title>
+	<link rel="stylesheet" media="screen" href="style.css" >
+	<script src="http://code.jquery.com/jquery-2.0.0.js"></script>	
+	</head>
+
+	<body>
+		<div id="container">
+			<header>
+				<h1>Formulario</h1>
+			</header>
+			
+			<section>
+				<header>
+					<h2>Rellena tus datos:</h2>
+				</header>
+				<article>
+						
+					<form id="form1" action="" method="post">
+						 <p>
+							<label for="nombre">Nombre: </label>
+							<input type="text" name="nombre" id="nombre" placeholder="Nombre" autofocus required>
+						</p>
+
+						<p>
+							<label for="date">Edad: </label>
+							<input type="number" name="date" id="date" min="1" max="99" maxlength="3" required/> 
+						</p>
+
+						<p>
+							<label for="email">Email: </label>
+							<input type="email" name="email" id="email" placeholder="correo@dominio.com" required>
+						</p>
+
+						<p>
+							<label for="comments">Comentarios: </label>
+							<textarea type="text" name="comments" id="comments" placeholder="Comentarios..." cols="50" rows="10" maxlength="140"></textarea>
+						</p>
+						
+						<button class="submit" type="submit" id="send">Enviar</button>
+					</form>
+						
+					</form>			
+					
+				</article>
+			</section>
+			<footer>
+			</footer>	
+		</div>
+	</body>
+</html>

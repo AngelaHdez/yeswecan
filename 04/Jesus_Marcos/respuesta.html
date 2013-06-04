@@ -1,0 +1,31 @@
+﻿<html lang="es">
+    <head>
+		<meta charset="utf-8" />
+        <title>Respuesta</title>
+        <link rel='stylesheet' href='style.css' type='text/css' media='all' />
+        <script src="http://code.jquery.com/jquery-2.0.0.js"></script>
+    <body>
+		
+	<script type="text/javascript"> 
+		$(document).ready(function() {
+		
+                function gup( name ){
+					var regexS = "[\\?&]"+name+"=([^&#]*)";
+					var regex = new RegExp ( regexS );
+					var tmpURL = window.location.href;
+					var results = regex.exec( tmpURL );
+					if( results == null )
+						return"";
+					else
+						return results[1];
+				}
+				
+				var nombre_param = gup( 'nombre' );
+				var apellidos_param = gup( 'apellidos' );
+				var poblacion_param = gup( 'poblacion' );
+				document.write("<h2>El formulario se ha enviado correctamente</h2><br/><p>Nombre: "+nombre_param+"</p><br/><p>Apellidos: "+apellidos_param+"</p><br/><p>Población: "+poblacion_param+"</p>")
+            });
+	</script> 
+	
+</body>
+</html>

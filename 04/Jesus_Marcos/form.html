@@ -1,0 +1,36 @@
+﻿<html lang="es">
+    <head>
+		<meta charset="utf-8" />
+        <title>Validar Formulario html</title>
+        <link rel='stylesheet' href='style.css' type='text/css' media='all' />
+        <script src="http://code.jquery.com/jquery-2.0.0.js"></script>
+    <body>
+
+        <form id="formOne" action="respuesta.html" method="get">
+            <h1>Validar Formulario html</h1>
+            <h2>Los campos marcados con * son obligatorios</h2>
+
+            <fieldset>
+                    <ul>
+                        <li>
+                            <label for="nombre">Nombre *</label>
+							<p class="nombreError"></p>
+                            <input type="text" id="nombre" placeholder="Tu nombre" name="nombre" title="Escribe tu nombre">
+                        </li>
+                        <li>
+                            <label for="apellidos">Apellidos *</label>
+							<p class="apellidosError"></p>
+                            <input type="text" id="apellidos" name="apellidos" title="Escribe tu nombre">
+                        </li>
+                        <li>
+                            <label for="poblacion">Población *</label>
+							<p class="poblacionError"></p>
+                            <input type="text" id="poblacion" placeholder="De donde eres.." name="poblacion" title="Escribe tu poblacion">
+                        </li>
+                    </ul>
+					<input type="submit" value="Enviar" id="button">
+            </fieldset>
+        </form>
+        <script type='text/javascript' src='validar.js'></script>
+    </body>
+</html>

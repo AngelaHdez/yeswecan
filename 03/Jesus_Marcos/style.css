@@ -1,0 +1,17 @@
+body {font-family: Arial, sans-serif;color: #222222;}
+
+#container {
+    background: none repeat scroll 0 0 #CCCCCC;
+    margin: 0 auto;
+    padding: 40px;
+    width: 500px;
+}
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 1px 1px 0 #FFFFFF;
+}
+h2 {text-align: center;text-shadow: 1px 1px 0 #FFFFFF;}
+label {}
+input {}
+button {}
