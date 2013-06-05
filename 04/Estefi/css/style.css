@@ -69,5 +69,32 @@ fieldset #submit.disabled:hover {
 
 
 
+/* Página de respuesta */
+.answer-page {text-align: center;}
+
+.answer-page h4 {
+    background: none repeat scroll 0 0 #ABE4FC;
+}
+
+.answer-page ul {
+    background: none repeat scroll 0 0 #FFFF9E;
+    box-shadow: 2px 2px 4px #555555;
+    margin: 0 auto 30px;
+    padding: 60px 10px !important;
+    width: 250px;
+}
+
+.answer-page ul li {
+	list-style-type: none;
+} 
+
+
+
+
+
+
+
+
+
 
 
