@@ -20,7 +20,7 @@ fieldset label {
     width: 190px;
 }
 fieldset input {
-    margin-bottom: 30px;
+    margin-top: 10px;
     width: 250px;
 }
 
@@ -66,8 +66,38 @@ fieldset #submit.disabled:hover {
     cursor: default;
 }
 
+.error-msg {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid red;
+    box-shadow: 0 3px 3px #666666;
+    -webkit-box-shadow: 0 3px 3px #666666;
+    display: inline-block;
+    float: right;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 -10px;
+	opacity: 0;
+    overflow: hidden;
+    padding: 5px;
+    text-align: center;
+    width: 60%;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
 
 
+
+#reset {
+    display: block;
+    font-size: 17px;
+    margin: 30px auto 0;
+    text-transform: uppercase;
+}
+
+.clear {clear: both;}
 
 /* Página de respuesta */
 .answer-page {text-align: center;}
@@ -87,9 +117,6 @@ fieldset #submit.disabled:hover {
 .answer-page ul li {
 	list-style-type: none;
 } 
-
-
-
 
 
 

@@ -12,14 +12,17 @@
 		<form name="formulario" id="formulario" class="formulario" action="respuesta.html" method="get">  
 			<fieldset>
 				<label>Nombre <span>(*)</span></label>  
-				<input name="nombre" id="nombre" type="text" />
-				<br />
+				<input name="nombre" id="nombre" class="text-label" type="text" />
+				<span class="msg-name error-msg">Ey! Tienes que rellenar el nombre para poder continuar</span>
+				<div class="clear"></div>
 				<label>Apellidos <span>(*)</span></label>  
-				<input name="apellidos" id="apellidos" type="text" /> 
-				<br />
+				<input name="apellidos" id="apellidos" class="text-label" type="text" /> 
+				<span class="msg-lastname error-msg">Ey! Tienes que rellenar los apellidos para poder continuar</span>
+				<div class="clear"></div>
 				<label>Localidad <span>(*)</span></label>  
-				<input name="localidad" id="localidad" type="text" /> 
-				<br />
+				<input name="localidad" id="localidad" class="text-label" type="text" /> 
+				<span class="msg-location error-msg">Ey! Tienes que rellenar la localidad para poder continuar</span>
+				<div class="clear"></div>
 
 				<input name="submit" id="submit" type="submit" value="Enviar" /> 
 				<input name="reset" id="reset" type="reset" value="Limpiar datos" />

@@ -25,10 +25,42 @@
 			$(this).css('background', '#ED9E9E');
 		} 
 	});
-/*--------------------------------------------------------------*/	
+/*--------------------------------------------------------------*/
+	
+/* Ocultar el aviso cuando el foco está dentro del input superior */	
+	$("#nombre").focusin(function(){
+		$('.msg-name').css('opacity', '0');
+	});
+	$("#apellidos").focusin(function(){
+		$('.msg-lastname').css('opacity', '0');
+	});
+	$("#localidad").focusin(function(){
+		$('.msg-location').css('opacity', '0');
+	});	
+	
+	
+/*Validar formulario, avisos con mensaje sobre el input correspondiente*/
+	$("#formulario").submit(function(e){
+		$(".error-msg").css('opacity', '0');
+		if($("#nombre").val().length == 0) {  
+			e.preventDefault();
+			$(".msg-name").css('opacity', '1');
+			$('#nombre').css('background', '#ED9E9E');
+		} if($("#apellidos").val().length == 0) {  
+			e.preventDefault();
+			$(".msg-lastname").css('opacity', '1');
+			$('#apellidos').css('background', '#ED9E9E');
+		} if($("#localidad").val().length == 0) {  
+			e.preventDefault();
+			$(".msg-location").css('opacity', '1');
+			$('#localidad').css('background', '#ED9E9E');
+		} 
+	})
 
-/*Validar formulario*/
-	$("#formulario").submit(function () {  
+		
+	
+/*Validar formulario, avisos con alerts */
+	/*$("#formulario").submit(function () {  
 		if($("#nombre").val().length == 0) {  
 			alert("El nombre es obligatorio");  
 			return false;  
@@ -41,7 +73,13 @@
 			alert("La localidad es obligatoria");  
 			return false;  
 		}  
-	});	
+	});	*/
 /*------------------*/	
+	
+
+	
+	
+	
+	
 	
 });
