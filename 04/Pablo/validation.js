@@ -14,7 +14,38 @@ $(document).ready(function(){
 	var emptyerror = "Por favor rellene este campo.";
 
 	$("#myForm").submit(function(){	
+		
+		//Validar campos obligatorio
+		for (i=0;i<required.length;i++) {
+			var input = $('#'+required[i]);
+			if ((input.val() == "") || (input.val() == emptyerror)) {
+				input.addClass("empty");
+				$(".error").html(emptyerror);
 
+			} else {
+				input.removeClass("empty");
 
+			}
+		}
+		
+		//Si algun campo tiene la clase "empty" la eliminamos
+		if ($(":input").hasClass("empty")) {
+			return false;
+		} else {
+			emptyerror.hide();
+			return true;
+			}
+		});
+
+	   // Borra todos los campos en el formulario cuando el usuario hace clic en ellos
+		$(":input").focus(function(){		
+			   if ($(this).hasClass("empty") ) {
+					$(this).val("");
+					$(this).removeClass("empty");
+					
+			   }
+		});
 				
 	});	
+
+});	
