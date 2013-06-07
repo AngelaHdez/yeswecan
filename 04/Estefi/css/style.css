@@ -102,14 +102,30 @@ fieldset #submit.disabled:hover {
 
 .answer-page h4 {
     background: none repeat scroll 0 0 #ABE4FC;
+    font-size: 22px;
 }
 
 .answer-page ul {
     background: none repeat scroll 0 0 #FFFF9E;
     box-shadow: 2px 2px 4px #555555;
-    margin: 0 auto 30px;
+    margin: 70px auto 50px;
     padding: 60px 10px !important;
     width: 250px;
+-moz-transform: scale(1) rotate(10deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+		-webkit-transform: scale(1) rotate(10deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+        -o-transform: scale(1) rotate(10deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+        -ms-transform: scale(1) rotate(10deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+        transform: scale(1) rotate(10deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+}
+
+.answer-page ul:before {
+    background: url("../images/chincheta.png") no-repeat scroll 0 0 transparent;
+    content: "";
+    height: 90px;
+    left: -10px;
+    position: absolute;
+    top: -40px;
+    width: 90px;
 }
 
 .answer-page ul li {
@@ -157,6 +173,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcecfc', end
     -webkit-border-radius: 5px 5px 5px 5px;
     box-shadow: 1px 1px 2px #000000;
     -webkit-box-shadow: 1px 1px 2px #000000;
+    float: right;
+    font-size: 22px;
     padding: 5px 10px;
     text-decoration: none;
 }
