@@ -15,15 +15,18 @@
 			
 			<script type="text/javascript"> 
 				$(document).ready(function() {
-			
+						//Obtener los parámetros de la URL
 						function getURLParams(){
 						  window.$GET = [];
 						  if(location.search){
+						//Decodificar posibles caracteres especiales
 							var params = decodeURIComponent(location.search).match(/[a-z_]\w*(?:=[^&]*)?/gi);
 							if(params){
 							  var pm, i = 0;
+						//Recorrer la cadena, dividiendola por cada =
 							  for(; i < params.length; i++){
 								pm = params[i].split('=');
+						//Identifica la posición y el valor de cada campo
 								$GET[pm[0]] = pm[1] || "";
 							  }
 							}
@@ -32,7 +35,7 @@
 						
 						getURLParams()
 						
-
+						//Consigue los elementos por su ID
 						var tunombre = document.getElementById("tunombre");
 						var tuapellidos = document.getElementById("tuapellidos");
 						var tupoblacion = document.getElementById("tupoblacion");
