@@ -122,13 +122,3 @@ legend {
 
 .error{background: red;color:#FFF}
 .correcto{background: green;color:#FFF}
-
-.mensaje {
-	text-align:center;
-	color:#FFF;
-	font-family: 'Merienda', cursive;
-}
-.mensaje span {
-	font-size:34px;
-	display:block;
-}
