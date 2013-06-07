@@ -20,16 +20,14 @@ $(document).ready(function() {
 	var name = $.getUrlVars()["nombre"];
 	var lastname = $.getUrlVars()["apellidos"];
 	var location = $.getUrlVars()["localidad"];
-		
+
 	/* Sustituyo los símbolos + que se insertan en los espacios del apellido */
 	var kk = lastname.split('+');
 	var uu = "";
 	for (var i = 0; i<kk.length; i++){
 		uu += kk[i] + " ";
 	}
-
 	
-		
 	/* Escribo los datos recogidos */	
 	$('.answer-page ul li').html(name + '<br />' + uu + '<br />' +  'de ' + location);
 		
