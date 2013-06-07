@@ -38,22 +38,42 @@
 		$('.msg-location').css('opacity', '0');
 	});	
 	
-	
-/*Validar formulario, avisos con mensaje sobre el input correspondiente*/
+	/* Recojo en variables los ids de cada campo, para mostrarlos en el mensaje de error */
+	var nameText = $('.nameBox label').text();
+	var lastnameText = $('.lastnameBox label').text();
+	var locationText = $('.locationBox label').text();
+
+	/*Validar formulario, avisos con mensaje sobre el input correspondiente*/
 	$("#formulario").submit(function(e){
-		$(".error-msg").css('opacity', '0');
+		$(".msg-box-top li").css('display', 'none');
 		if($("#nombre").val().length == 0) {  
 			e.preventDefault();
 			$(".msg-name").css('opacity', '1');
 			$('#nombre').css('background', '#ED9E9E');
-		} if($("#apellidos").val().length == 0) {  
+			$(".msg-box-top").css('opacity', '1');	
+			$(".msg-box-top").css('height', '100px');	
+			$(".msg-box-top .text1").css('display', 'inline-block');			
+			$('.text1').html(nameText);
+		} 
+		
+		if($("#apellidos").val().length == 0) {  
 			e.preventDefault();
 			$(".msg-lastname").css('opacity', '1');
 			$('#apellidos').css('background', '#ED9E9E');
-		} if($("#localidad").val().length == 0) {  
+			$(".msg-box-top").css('opacity', '1');	
+			$(".msg-box-top").css('height', '100px');	
+			$(".msg-box-top .text2").css('display', 'inline-block');		
+			$('.text2').html(lastnameText);
+		} 
+		
+		if($("#localidad").val().length == 0) {  
 			e.preventDefault();
 			$(".msg-location").css('opacity', '1');
 			$('#localidad').css('background', '#ED9E9E');
+			$(".msg-box-top").css('opacity', '1');	
+			$(".msg-box-top").css('height', '100px');	
+			$(".msg-box-top .text3").css('display', 'inline-block');		
+			$('.text3').html(locationText);
 		} 
 	})
 
@@ -75,11 +95,5 @@
 		}  
 	});	*/
 /*------------------*/	
-	
-
-	
-	
-	
-	
 	
 });

@@ -18,11 +18,10 @@ $.extend({
 $(document).ready(function() {
 	/* Declaro las variables, recogiendo el valor de la url */
 	var name = $.getUrlVars()["nombre"];
-	lastname = $.getUrlVars()["apellidos"];
+	var lastname = $.getUrlVars()["apellidos"];
 	var location = $.getUrlVars()["localidad"];
 		
-	/* Elimino los símbolos + que se insertan en los espacios del apellido */
-	console.log('lastname: ' + lastname);
+	/* Sustituyo los símbolos + que se insertan en los espacios del apellido */
 	var kk = lastname.split('+');
 	var uu = "";
 	for (var i = 0; i<kk.length; i++){
@@ -32,7 +31,7 @@ $(document).ready(function() {
 	
 		
 	/* Escribo los datos recogidos */	
-	$('.answer-page ul li').html(name + '<br />' + uu + ',<br />' +  'de ' + location);
+	$('.answer-page ul li').html(name + '<br />' + uu + '<br />' +  'de ' + location);
 		
 
 });
