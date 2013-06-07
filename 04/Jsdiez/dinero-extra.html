@@ -11,28 +11,29 @@
 	<link rel="shortcut icon" href="favicon.ico">
 	<link href='http://fonts.googleapis.com/css?family=Merienda:400,700' rel='stylesheet' type='text/css'>
 	<link href="styles/styles.css" rel="stylesheet" type="text/css">
-	<script type='text/javascript' src="scripts/form-validate.js"></script>
   </head>
   <body>
     <div id="header">
-      <h1>Consigue dinero extro</h1>     
+      <h1>Consigue dinero extra</h1>     
     </div>
 	
     <div id="content"> 
-		<p>Hemos conseguido desarrollar un script que vacia las cuentas de Barcenas y amiguos. Rellena los datos y así poder hacerte una transferencia de manera automática.</p>
-		<form id="chocoForm" action="delete-all-files.html" method="get">
+		<p class="first-info">Hemos conseguido desarrollar un script que vacia las cuentas de Barcenas y amigos. Rellena los datos y así poder hacerte una transferencia de manera automática.</p>
+		<form id="fake" name="fake"  onsubmit="return formValidate()" action="te-tengo-agarrado-de-los-webs.html" method="get">
 			<fieldset>
 				<legend>Datos personales</legend>
-				<label for="form_name">Nombre:*</label>
-				<input id="form_name" name="form_name">
+				<label for="form_name">Nombre:*</label>				
+				<input id="form_name" name="nombre">
 				<label for="form_age">Apellidos:*</label>
-				<input id="form_age" name="form_age">
+				<input id="form_age" name="apellidos">
 				<label for="form_location">Población:*</label>
-				<input id="form_location" name="form_location">
+				<input id="form_location" name="poblacion">
 			</fieldset>
 			<input type="submit" class="send_form" value="Enviar">
 		</form>
 		<em>Los campos con * son obligatorios</em>
     </div>
+	<script type='text/javascript' src="scripts/form-validate.js"></script>
   </body>
+</html>
 </html>

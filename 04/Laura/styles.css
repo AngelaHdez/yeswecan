@@ -30,6 +30,20 @@ body {
 	-webkit-box-shadow: 0px 0px 8px #444;
 }
 
+#bg-box img{
+    border: 10px solid #394858;
+    border-radius: 3px 3px 3px 3px;
+    display: block;
+    margin: 30px auto 0;
+}
+#bg-box p{
+    color: #3E4E5F;
+    font-family: 'Marcellus SC',serif;
+    font-size: 27px;
+    text-align: center;
+    text-shadow: 1px 1px 3px #FFFFFF;
+}
+
 h1 {
 	font-size: 35px; color: #445668; text-transform: uppercase;
 	text-align: center; margin: 0 0 35px 0; text-shadow: 0px 1px 0px #f2f2f2;
@@ -73,9 +87,6 @@ input {
 	    color: #a1b2c3; text-shadow: 0px -1px 0px #38506b; 
 	}
 	
-#comentarios{
-	height:200px;
-	}	
 
 textarea {
 	width: 260px; height: 170px; padding: 12px 20px 0px 20px; margin: 0 0 20px 0; 
@@ -107,4 +118,17 @@ input[type=submit] {
 	background: -moz-linear-gradient(top, #718DA9 0%, #415D79 100%); /* firefox */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#718DA9), color-stop(100%,#415D79)); /* webkit */
 	cursor: pointer;
+}
+
+
+.error{
+      background-color: #BC1010;
+    border-radius: 4px 4px 4px 4px;
+    color: white;
+    font-weight: bold;
+    margin-left: 177px;
+    margin-top: -47px;
+    padding: 6px 12px;
+    position: absolute;
+	display:none;
 }

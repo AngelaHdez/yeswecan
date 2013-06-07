@@ -1,36 +1,66 @@
-//trasteando con jscript
-
-//hacemos aparecer el formulario y la caja de respuesta
+//identificamos los campos del formulario
     $(document).ready(function(){
-        $("#miformulario").fadeIn(2000);
-		$("#bg-box").fadeIn(2000);
-        
-    });
-	$("#enviar").click(function(event) {
-  event.preventDefault();
+	 
+		
+		$("#miformulario").submit(function(event){
+			
+			var nombre = $("#nombre").val();
+			var apellido = $("#apellido").val();
+			var poblacion = $("#poblacion").val();
+			
+			
+			//si el campo esta vacio sacamos mensaje de error
+			if(nombre == ""){
+			  $(".required").css("background","red");	
+			  $("#mensaje").fadeIn(100);
+			  event.preventDefault();
+			  
+			  
+			 //si está relleno ocultamos mensaje
+			}else{
+				  $(".required").css("background","none");
+				  $("#mensaje").fadeOut(100);
+				  
+			}
+			
+			if(apellido == ""){
+			  $(".required").css("background","red");	
+			  $("#mensaje").fadeIn(100);
+			  event.preventDefault();
+			  
+			  
+			 //si está relleno ocultamos mensaje
+			}else{
+				  $("#apellido").css("background","#728eaa");
+				  $("#mensaje").fadeOut(100);
+				  
+			}
+			
+			if(poblacion == ""){
+			  $(".required").css("background","red");	
+			  $("#mensaje").fadeIn(100);
+			  event.preventDefault();
+			  
+			  
+			 //si está relleno ocultamos mensaje
+			}else{
+				  $("#poblacion").css("background","#728eaa");
+				  $("#mensaje").fadeOut(100);
+				  
+			}
+			
+			
+		 
+		 });
+		 
+		  
+		
 	 });
 	
-//identificamos los campos del formulario
-	 $(function(){
-        $('#nombre').keyup(function(){
-            var _this = $('#nombre');
-            var _user = $('#nombre').val();
-                        _this.attr('style', 'background:white');
-            if(_user.indexOf(' ') >= 0){
-                _this.attr('style', 'background:#FF4A4A');
-            }
- 
-            if(_user.indexOf("'") >= 0){
-                _this.attr('style', 'background:#FF4A4A');
-            }
- 
-            if(_user.val() == ''){
-                _this.attr('style', 'background:#FF4A4A');
-            }
-        });
-    });
-
-//detectamos los campos vacios
+	
 
 
-//si est�n rellenos enviamos formulario
+
+
+
+	 

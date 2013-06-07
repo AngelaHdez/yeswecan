@@ -4,18 +4,21 @@
 <html lang="es">
   <head>
     <meta charset="utf-8">
-    <title>Archivo donde recibo los datos</title>
+    <title>Voy a por ti</title>
 	<link href='http://fonts.googleapis.com/css?family=Merienda:400,700' rel='stylesheet' type='text/css'>
 	<link href="styles/styles.css" rel="stylesheet" type="text/css">
-	<script type='text/javascript' src="scripts/form-validate.js"></script>
   </head>
   <body>
     <div id="header">
-      <h1></h1>     
+      <h1>!Te engañé!</h1>     
     </div>
-	
     <div id="content"> 
-	
+	<p class="first-info">Sé que vives en <span id="poblacion"></span> y voy a ir a por ti <span id="nombre"></span><p>
+	<img src="img/freddy_krueger.jpg" />
     </div>
+	<script type='text/javascript' src="scripts/form-validate.js"></script>
+	<script>
+		rescatarInfo();
+	</script>
   </body>
 </html>

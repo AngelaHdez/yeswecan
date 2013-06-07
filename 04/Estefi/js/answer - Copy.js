@@ -13,23 +13,31 @@ $.extend({
   }
 });
 
-
+function miReplace(string, x, y) {
+	var kk = string.split(x);
+	var uu = "";
+	for (var i = 0; i<kk.length; i++){
+		uu += kk[i] + y;
+	}
+	return uu;
+}
 
 $(document).ready(function() {
 	/* Declaro las variables, recogiendo el valor de la url */
 	var name = $.getUrlVars()["nombre"];
-	var lastname = $.getUrlVars()["apellidos"];
+	lastname = $.getUrlVars()["apellidos"];
 	var location = $.getUrlVars()["localidad"];
-
-	/* Sustituyo los símbolos + que se insertan en los espacios del apellido */
-	var kk = lastname.split('+');
-	var uu = "";
-	for (var i = 0; i<kk.length; i++){
-		uu += kk[i] + " ";
-	}
 	
+	var mifuncion = miReplace('jose6l6is6car6ajal', '6', '7');
+	console.log(mifuncion);
+		
+	/* Elimino los símbolos + que se insertan en los espacios del apellido */
+	
+
+	
+		
 	/* Escribo los datos recogidos */	
-	$('.answer-page ul li').html(name + '<br />' + uu + '<br />' +  'de ' + location);
+	//$('.answer-page ul li').html(name + '<br />' + uu + ',<br />' +  'de ' + location);
 		
 
 });

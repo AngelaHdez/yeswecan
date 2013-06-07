@@ -1,6 +1,7 @@
 ﻿<html>
 <head>
 	<title>Formularien con Jqueryen</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link rel="stylesheet" href="css/style.css">
 	<link href='http://fonts.googleapis.com/css?family=Life+Savers:400,700' rel='stylesheet' type='text/css'>
 	<script src="http://code.jquery.com/jquery-2.0.0.js"></script>
@@ -9,17 +10,36 @@
 <body>
 
 	<div id="container">
+	
+	<div class="msg-box-top">
+		<h2>Lo siento, te falta por rellenar:</h2>
+		<ul>
+			<li class="text1"></li>
+			<li class="text2"></li>
+			<li class="text3"></li>
+		</ul>
+	</div>
+	
 		<form name="formulario" id="formulario" class="formulario" action="respuesta.html" method="get">  
 			<fieldset>
-				<label>Nombre <span>(*)</span></label>  
-				<input name="nombre" id="nombre" type="text" />
-				<br />
-				<label>Apellidos <span>(*)</span></label>  
-				<input name="apellidos" id="apellidos" type="text" /> 
-				<br />
-				<label>Localidad <span>(*)</span></label>  
-				<input name="localidad" id="localidad" type="text" /> 
-				<br />
+				<div class="nameBox">
+					<label>Nombre <span>(*)</span></label>  
+					<input name="nombre" id="nombre" class="text-label" type="text" />
+					<span class="msg-name error-msg">Ey! Tienes que rellenar el nombre para poder continuar</span>
+				</div>
+				<div class="clear"></div>
+				<div class="lastnameBox">
+					<label>Apellidos <span>(*)</span></label>  
+					<input name="apellidos" id="apellidos" class="text-label" type="text" /> 
+					<span class="msg-lastname error-msg">Ey! Tienes que rellenar los apellidos para poder continuar</span>
+				</div>
+				<div class="clear"></div>
+				<div class="locationBox">
+					<label>Localidad <span>(*)</span></label>  
+					<input name="localidad" id="localidad" class="text-label" type="text" /> 
+					<span class="msg-location error-msg">Ey! Tienes que rellenar la localidad para poder continuar</span>
+				</div>
+				<div class="clear"></div>
 
 				<input name="submit" id="submit" type="submit" value="Enviar" /> 
 				<input name="reset" id="reset" type="reset" value="Limpiar datos" />
