@@ -1,0 +1,22 @@
+﻿<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script src="http://code.jquery.com/jquery-2.0.0.js"></script>
+</head>
+<body>
+	<script type="text/javascript">	
+		// declarar variables
+		var sUrl = window.location.href;
+		var aParametros = sUrl.split('?')[1].split('&');
+		var sCampo, sValor;
+		
+		for(var i=0; i<aParametros.length; i++){
+			sCampo = aParametros[i].split('=')[0];
+			sValor = decodeURIComponent(aParametros[i].split('=')[1]);
+			sValor = sValor.replace(/\+/gi, ' ');
+
+			$('body').append('<div>' + sCampo + ': ' + sValor + '</div>');
+		}
+	</script>
+</body>
+</html>
