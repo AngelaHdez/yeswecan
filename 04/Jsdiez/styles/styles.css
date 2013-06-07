@@ -111,6 +111,10 @@ legend {
 	text-shadow:1px 1px 1px #666;
 	margin-bottom: 10px;
 }
+
+.error{background: red;color:#FFF}
+.correcto{background: green;color:#FFF}
+
 .mensaje {
 	text-align:center;
 	color:#FFF;

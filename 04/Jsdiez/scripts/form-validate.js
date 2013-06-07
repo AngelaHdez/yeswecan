@@ -5,8 +5,7 @@ var form = document.fake;
 
 
 //capturo evento submit
-function callFormValidate()
-{
+function callFormValidate() {
   formValidate();
   return false;
 }
@@ -16,7 +15,10 @@ formValidate = function(){
 	for (i =0; i < inputForm.length;i++) {
 		if(inputForm[i].value == "") {
 			alert('hay un campo vacio')
+			inputForm[i].className = 'error';
 			return false;
-		}
+		} else {
+			inputForm[i].className = 'correcto';
+		}		
 	}
 }
