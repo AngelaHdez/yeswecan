@@ -69,7 +69,7 @@ Kata 4: Obtén la posición de un caracter dentro de una cadena
 -------------------------------------------------------------
 
 Cadena
-    > "¡¿Por qué debo trabajar por TODO?! ¡Es como decir que no lo merezo!"
+    > "¡¿Por qué debo trabajar por TODO?! ¡Es como decir que no lo merezco!"
 
 Kata
     > Imprime en la consola la cadena original, y obtén dentro de ella la última
