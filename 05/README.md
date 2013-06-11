@@ -34,53 +34,54 @@ y en inglés.
 
 
 Kata 1: Transforma una cadena a mayúsculas
-==========================================
+------------------------------------------
 
 Cadena
-    "El tiempo que pasa uno riendo es tiempo que pasa con los dioses."
+    > "El tiempo que pasa uno riendo es tiempo que pasa con los dioses."
 
 Kata
-    Imprime en la consola la cadena original y la cadena transformada en mayúsculas.
+    > Imprime en la consola la cadena original y la cadena transformada en mayúsculas.
 
 
 Kata 2: Elimina los espacios en blanco de una cadena
-====================================================
+----------------------------------------------------
 
 Cadena
-    "La lluvia sólo es un problema si no te quieres mojar."
+    > "La lluvia sólo es un problema si no te quieres mojar."
 
 Kata
-    Imprime en la consola la cadena original y la cadena con los espacios
+    > Imprime en la consola la cadena original y la cadena con los espacios
     blancos eliminados.
 
 
 Kata 3: Extrae un trozo de una cadena
-=====================================
+-------------------------------------
 
 Cadena
-    "Las cosas no parecen tan terribles cuando tienes a un buen amigo."
+    > "Las cosas no parecen tan terribles cuando tienes a un buen amigo."
 
 Kata
-    Imprime en la consola la cadena original, y un trozo de ésta empezando por
+    > Imprime en la consola la cadena original, y un trozo de ésta empezando por
     la posición 25 y alcanzando 10 caracteres.
 
 
 Kata 4: Obtén la posición de un caracter dentro de una cadena
-=============================================================
+-------------------------------------------------------------
 
 Cadena
-    "¡¿Por qué debo trabajar por TODO?! ¡Es como decir que no lo merezo!"
+    > "¡¿Por qué debo trabajar por TODO?! ¡Es como decir que no lo merezo!"
 
 Kata
-    Imprime en la consola la cadena original, y obtén dentro de ella la última
+    > Imprime en la consola la cadena original, y obtén dentro de ella la última
     posición del caracter 't'.
 
 
 Kata 5: Construye una cadena a partir de otra
-=============================================
+---------------------------------------------
 
 Cadena
-    "Cuando necesito pensar, salgo a pasear al bosque."
+    > "Cuando necesito pensar, salgo a pasear al bosque."
+
 Kata
-    Imprime en la consola la cadena original, y construye una nueva a partir de
+    > Imprime en la consola la cadena original, y construye una nueva a partir de
     ésta empezando por la posición 23 hasta el final.
