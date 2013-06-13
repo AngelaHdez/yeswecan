@@ -32,7 +32,7 @@
 		//Kata1
 		sKata1 = 'El tiempo que pasa uno riendo es tiempo que pasa con los dioses';
 		console.log('Kata '+nKata+': cadena original "'+ sKata1 +'"');
-		console.log('Kata '+nKata+': cadena transformada "'+ sKata1.toLocaleUpperCase() +'"');
+		console.log('Kata '+nKata+': cadena modificada "'+ sKata1.toLocaleUpperCase() +'"');
 		
 		console.log(sSeparator);
 		
@@ -40,7 +40,15 @@
 		nKata++;
 		sKata2 = 'La lluvia sólo es un problema si no te quieres mojar.';
 		console.log('Kata '+nKata+': cadena original "'+ sKata2 +'"');
-		console.log('Kata '+nKata+': cadena transformada "'+ sKata2.replace(/ /g,'') +'"');
+		console.log('Kata '+nKata+': cadena modificada "'+ sKata2.replace(/ /g,'') +'"');
+		
+		console.log(sSeparator);
+		
+		//Kata3
+		nKata++;
+		sKata3 = 'Las cosas no parecen tan terribles cuando tienes a un buen amigo.';
+		console.log('Kata '+nKata+': cadena original "'+ sKata3 +'"');
+		console.log('Kata '+nKata+': cadena modificada "'+ sKata3.substr(25,10) +'"');
 	</script>
   </body>
 </html>
