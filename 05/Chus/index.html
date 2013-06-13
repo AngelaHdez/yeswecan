@@ -26,11 +26,21 @@
     </div>
     <footer id="footer"></footer>
 	<script type="text/javascript">
+		//String to separate exercices
+		sSeparator = '********************************',
+		nKata = 1;
 		//Kata1
 		sKata1 = 'El tiempo que pasa uno riendo es tiempo que pasa con los dioses';
-		console.log('Kata 1: cadena original "'+ sKata1 +'"');
-		console.log('Kata 1: cadena transformada "'+ sKata1.toLocaleUpperCase() +'"');
-			
+		console.log('Kata '+nKata+': cadena original "'+ sKata1 +'"');
+		console.log('Kata '+nKata+': cadena transformada "'+ sKata1.toLocaleUpperCase() +'"');
+		
+		console.log(sSeparator);
+		
+		//Kata2
+		nKata++;
+		sKata2 = 'La lluvia sólo es un problema si no te quieres mojar.';
+		console.log('Kata '+nKata+': cadena original "'+ sKata2 +'"');
+		console.log('Kata '+nKata+': cadena transformada "'+ sKata2.replace(/ /g,'') +'"');
 	</script>
   </body>
 </html>
