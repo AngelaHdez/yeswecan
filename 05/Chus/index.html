@@ -48,7 +48,7 @@
 		nKata++;
 		sKata3 = 'Las cosas no parecen tan terribles cuando tienes a un buen amigo.';
 		console.log('Kata '+nKata+': cadena original "'+ sKata3 +'"');
-		console.log('Kata '+nKata+': cadena modificada "'+ sKata3.substr(25,10) +'"');
+		console.log('Kata '+nKata+': cadena modificada "'+ sKata3.substr(25,10).trim() +'"');
 		
 		console.log(sSeparator);
 		
@@ -57,6 +57,15 @@
 		sKata4 = '¡¿Por qué debo trabajar por TODO?! ¡Es como decir que no lo merezco!';
 		console.log('Kata '+nKata+': cadena original "'+ sKata4 +'"');
 		console.log('Kata '+nKata+':  posición del caracter T "'+ sKata4.indexOf("T") +'"');
+		
+		console.log(sSeparator);
+		
+		//Kata5
+		nKata++;
+		sKata5 = 'Cuando necesito pensar, salgo a pasear al bosque.';
+		console.log('Kata '+nKata+': cadena original "'+ sKata5 +'"');
+		console.log('Kata '+nKata+': nueva cadena "'+ sKata5.slice(23).trim() +'"');
+	</script>
 	</script>
 	</script>
   </body>
