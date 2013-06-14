@@ -29,10 +29,13 @@
 		
 		//Kata4
 		// declarar de variables
-			var kata4String = '¡¿Por qué debo trabajar por TODO?! ¡Es como decirt que no lo merezco!'
+			var kata4String = '¡¿Por qué debo trabajar por TODO?! ¡Es como decir que no lo merezco!'
 			console.log(kata4String); // Logs "¡¿Por qué debo trabajar por TODO?! ¡Es como decir que no lo merezco!"
+		// declarar de variables de orden revés
+			//var kata4sReves = kata4String.split("").reverse().join("");
+			//console.log(kata4sReves);
 		// declarar de variables
-			var kata4index = kata4String.indexOf("t");
+			var kata4index = kata4String.toLocaleLowerCase().lastIndexOf("t");
 			console.log(kata4index); // Logs posición de la letra "t"
 		
 		//Kata5
