@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>06 - Kata sobre metodos de cadenas</title>
   </head>
   <body>
@@ -38,7 +38,7 @@
 		
 		//Kata2
 		nKata++;
-		sKata2 = 'La lluvia s�lo es un problema si no te quieres mojar.';
+		sKata2 = 'La lluvia sólo es un problema si no te quieres mojar.';
 		console.log('Kata '+nKata+': cadena original "'+ sKata2 +'"');
 		console.log('Kata '+nKata+': cadena modificada "'+ sKata2.replace(/ /g,'') +'"');
 		
@@ -49,6 +49,15 @@
 		sKata3 = 'Las cosas no parecen tan terribles cuando tienes a un buen amigo.';
 		console.log('Kata '+nKata+': cadena original "'+ sKata3 +'"');
 		console.log('Kata '+nKata+': cadena modificada "'+ sKata3.substr(25,10) +'"');
+		
+		console.log(sSeparator);
+		
+		//Kata4
+		nKata++;
+		sKata4 = '¡¿Por qué debo trabajar por TODO?! ¡Es como decir que no lo merezco!';
+		console.log('Kata '+nKata+': cadena original "'+ sKata4 +'"');
+		console.log('Kata '+nKata+':  posición del caracter T "'+ sKata4.indexOf("T") +'"');
+	</script>
 	</script>
   </body>
 </html>
