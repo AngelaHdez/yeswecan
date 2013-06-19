@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>06 - Kata sobre metodos de cadenas</title>
+  </head>
+  <body>
+    <header id="header">
+      <h1>Results into console</h1>      
+    </header>
+    <nav>
+    </nav>
+    <div id="content"> 
+      <article>
+        <header>
+          <h1></h1>
+          <p></p>
+        </header>
+        <p></p>
+        <footer></footer>
+      </article>
+      <aside id="sidebar">
+        <h3></h3> 
+        <p></p>
+      </aside>
+    </div>
+    <footer id="footer"></footer>
+	<script type="text/javascript">
+		//String to separate exercices
+		sSeparator = '********************************',
+		nKata = 1;
+		//Kata1
+		sKata1 = 'El tiempo que pasa uno riendo es tiempo que pasa con los dioses';
+		console.log('Kata '+nKata+': cadena original "'+ sKata1 +'"');
+		console.log('Kata '+nKata+': cadena modificada "'+ sKata1.toLocaleUpperCase() +'"');
+		
+		console.log(sSeparator);
+		
+		//Kata2
+		nKata++;
+		sKata2 = 'La lluvia sólo es un problema si no te quieres mojar.';
+		console.log('Kata '+nKata+': cadena original "'+ sKata2 +'"');
+		console.log('Kata '+nKata+': cadena modificada "'+ sKata2.replace(/ /g,'') +'"');
+		
+		console.log(sSeparator);
+		
+		//Kata3
+		nKata++;
+		sKata3 = 'Las cosas no parecen tan terribles cuando tienes a un buen amigo.';
+		console.log('Kata '+nKata+': cadena original "'+ sKata3 +'"');
+		console.log('Kata '+nKata+': cadena modificada "'+ sKata3.substr(25,10).trim() +'"');
+		
+		console.log(sSeparator);
+		
+		//Kata4
+		nKata++;
+		sKata4 = '¡¿Por qué debo trabajar por TODO?! ¡Es como decir que no lo merezco!';
+		console.log('Kata '+nKata+': cadena original "'+ sKata4 +'"');
+		console.log('Kata '+nKata+':  posición del caracter T "'+ sKata4.indexOf("T") +'"');
+		
+		console.log(sSeparator);
+		
+		//Kata5
+		nKata++;
+		sKata5 = 'Cuando necesito pensar, salgo a pasear al bosque.';
+		console.log('Kata '+nKata+': cadena original "'+ sKata5 +'"');
+		console.log('Kata '+nKata+': nueva cadena "'+ sKata5.slice(23).trim() +'"');
+	</script>
+	</script>
+	</script>
+  </body>
+</html>
