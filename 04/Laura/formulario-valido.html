@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Tareas con Github">
+<title>Un formulario chulo con jquery</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+
+<script>
+//hacemos aparecer el formulario y la caja de respuesta
+ $(document).ready(function(){
+        $("#miformulario").fadeIn(2000);
+        
+    });
+</script>
+</head>
+<body>
+    
+	 
+        <form name="miformulario" id="miformulario" method="get" action="respuesta.html">
+             <div id="mensaje" class="error">No se te olvida algo hermoso?</div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" class="required">
+			
+            <br />
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" id="apellido" class="required"> 
+			
+            <br />
+            <label for="poblacion">Poblacion:</label>
+           <input type="text" name="poblacion" id="poblacion" class="required" > 
+		 
+            
+                <br />
+            <input type="submit" value="Enviame!" id="enviar" >
+     
+        </form>
+    
+</body>
+
+
+</html>
