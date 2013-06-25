@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Katas</title>
+    
+    	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- script src="http://code.jquery.com/jquery-2.0.0.js"></script-->
+</head>
+<script>
+//katas
+
+//Kata 1: transformar una cadena a mayusculas
+
+    //declaramos la variable
+    var kata1 = "El tiempo que pasa uno riendo es tiempo que pasa con los dioses."
+      //mostramos por consola
+      console.log(kata1);
+      //pasamos a mayusculas por la consola
+      console.log(kata1.toLocaleUpperCase());
+
+      
+      
+//Kata 2: Eliminar los espacios en blanco de una cadena
+
+    //declaramos la variable
+    var kata2 = "La lluvia sólo es un problema si no te quieres mojar."
+      //mostramos por consola
+      console.log(kata2);
+      //eliminamos los espacios en blanco
+      console.log(kata2.replace(/\s/g,''));
+      
+      
+
+//Kata 3: Extraer un trozo de una cadena
+
+    //declaramos la variable
+    var kata3 = "Las cosas no parecen tan terribles cuando tienes a un buen amigo."
+     //mostramos por consola
+      console.log(kata3);
+      //contamos desde el caracter 25, hasta 10
+      console.log(kata3.substr(25,10));
+
+
+//Kata 4: Obtener posicion de un caracter dentro de una cadena
+
+    //declaramos la variable
+    var kata4 = "¡¿Por qué debo trabajar por TODO?! ¡Es como decir que no lo merezco!"
+    var regexp = /[t]/;
+     //mostramos por consola
+      console.log(kata4);
+      //buscamos la "t"
+      console.log(kata4.match("regexp"));
+      //localizamos la posicion
+      console.log(kata4.indexOf("regexp"));
+
+
+//Kata 4: Contruir una cadena a partir de otra
+
+    //declaramos la variable
+    var kata5 = "Cuando necesito pensar, salgo a pasear al bosque."
+     //mostramos por consola
+      console.log(kata5);
+      //buscamos el caracter 23
+       console.log(kata5.substr(23));
+      //creamos un string nuevo a partir de esa posicion
+      console.log(kata5.slice(23));
+
+            
+      
+</script>
+
+<body>
+
+<h1>Mira en la consola! :)</h1>
+
+
+
+
+
+</body>
+</html>
