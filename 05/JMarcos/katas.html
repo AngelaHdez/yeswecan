@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Katas</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<script>
+
+//Kata 1: transformar una cadena a mayusculas
+
+    kata1 = "El tiempo que pasa uno riendo es tiempo que pasa con los dioses."
+    console.log(kata1);
+    console.log(kata1.toLocaleUpperCase());
+
+      
+      
+//Kata 2: Eliminar los espacios en blanco de una cadena
+
+    kata2 = "La lluvia sólo es un problema si no te quieres mojar."
+	console.log(kata2);
+    console.log(kata2.replace(/ /g,''));
+      
+      
+
+//Kata 3: Extraer un trozo de una cadena
+
+    kata3 = "Las cosas no parecen tan terribles cuando tienes a un buen amigo."
+    console.log(kata3);
+    console.log(kata3.substr(25,10));
+
+
+//Kata 4: Obtener posicion de un caracter dentro de una cadena
+
+    kata4 = "¡¿Por qué debo trabajar por TODO?! ¡Es como decir que no lo merezco!"
+    console.log(kata4.indexOf("T"));
+
+
+//Kata 5: Contruir una cadena a partir de otra
+
+    kata5 = "Cuando necesito pensar, salgo a pasear al bosque."
+    var newkata5 = kata5.slice(24);
+	var upperNewkata5 = newkata5.slice(0,1).toUpperCase() + newkata5.slice(1, newkata5.length);
+	console.log(upperNewkata5);
+
+            
+      
+</script>
+
+<body>
+
+<h1>Resultados en consola</h1>
+
+
+
+
+
+</body>
+</html>
