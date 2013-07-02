@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Katas sobre métodos de arrays </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script src="http://code.jquery.com/jquery-2.0.0.js"></script>
+</head>
+<script>
+
+// Kata 1: Extrae el valor del primer elemento de un array
+
+	separator = ("----------------------------");
+	
+	aColors = ["red","blue","green","black"]
+	console.log(aColors[0]);
+
+    console.log(separator); 
+      
+// Kata 2: Calcula el número de elementos de un array
+
+	aReggaeArtists = ["Gentleman","Anthony B","Sizzla","Junior Kelly"]
+	console.log(aReggaeArtists.length);
+
+	console.log(separator);
+
+// Kata 3: Explica qué tres tipos de métodos se pueden utilizar sobre arrays
+	
+	
+	console.log("El método 'concat' une dos arrays, devolviendo uno nuevo")
+	//ejemplo:
+	aVehicles = ["car","bus","metro"];
+	aVehicles = aVehicles.concat("motorbike", "train", "bike"); 
+	console.log(aVehicles);
+   
+	console.log(separator);
+   
+	console.log("El método 'shift' elimina el primer elemento y lo muestra")
+	//ejemplo:
+	aBirds = ["Golondrina", "Colibrí", "Abejaruco"];
+	console.log(aBirds.shift());
+
+	console.log(separator);
+	
+	console.log("El método 'reverse ' invierte el orden de los elementos")
+	//ejemplo:
+	aVegetables = ["tomato", "lettuce", "asparagus"];
+	console.log(aVegetables.reverse());
+   
+	console.log(separator);
+// Kata 4: Elimina el último elemento de un array
+
+	aNumbers = [1000,2000,3000,4000];
+	console.log(aNumbers.pop());
+	
+	console.log(separator);
+// Kata 5: Construye una cadena a partir de un array con un separador
+
+   aDirectors = ["Quentin Tarantino","Robert Rodriguez","Stanley Kubrick","Woody Allen"];
+   aListFace = aDirectors.join(", "); 
+
+
+// Kata 6: Construye un array a partir de otro array transformando sus elementos
+    
+	aGeometry = ["pentágono","triángulo","rectángulo","círculo"];
+	aGeometry=$.map(aGeometry, function(n)
+                { 
+                    return(n.toUpperCase());
+                });
+	console.log(aGeometry);
+    
+	
+	
+</script>
+
+<body>
+
+<h1>Resultados en consola</h1>
+
+
+
+
+
+</body>
+</html>
