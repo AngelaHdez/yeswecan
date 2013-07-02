@@ -1,0 +1,88 @@
+﻿<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script src="http://code.jquery.com/jquery-2.0.0.js"></script>
+</head>
+<body>
+	<form action="respuesta.html" method="get">
+		<fieldset>
+			<legend>Rellena los siguientes campos: (*) todos los campos son obligatorios</legend>
+			<label>Nombre: <input type="text" name="nombre" /></label><br />
+			<label>Apellidos: <input type="text" name="apellidos" /></label><br />
+			<label>País: <input type="text" name="pais" /></label><br />
+			<input type="submit" value="enviar" />
+		</fieldset>
+	</form>
+	<script type="text/javascript">
+		
+		// capturar la carga de la pagina para asegurarme que ya existen todos los elementos del dom
+		$(document).ready(function(){
+
+			// declarar de variables
+			var oForm = $('form')[0];
+			var aInputsText = $('form input[type="text"]');
+			var bCheckRequired;
+			var sLabelCamposError;
+
+
+			// metodo para resetear el background de los campos del formulario
+			resetBackgroundInputs = function(evt){
+				$(evt.target).css('background', 'white');
+			}
+			// capturar el keypress sobre los campos de texto del formulario para resetear su background
+			$(aInputsText).on('keypress', resetBackgroundInputs);
+
+
+			// metodo para validar que todos los campos del formulario estan rellenos, todos son obligatorios
+			validarCamposObligatorios = function(evt){				
+
+				// variable de control para comprobar que todos los campos obligatorios estan rellenos
+				bCheckRequired = true;
+				sLabelCamposError = '';
+
+				// recorrer todos los campos que vamos a validar
+				for(var i=0; i<aInputsText.length; i++){
+					// comprobar si cada campo que se recorre esta relleno, utilizo el metodo trim de jquery para quitar posibles espacios en blando
+					aInputsText[i].value = $.trim(aInputsText[i].value);
+					if(aInputsText[i].value == ''){
+						// marcar visualmente cada campo que no ha sido completado
+						$(aInputsText[i]).css('background-color', 'red');
+						sLabelCamposError += aInputsText[i].name + ', '; // bola extra											
+						
+						// chequear variable de control a falso en cuanto uno de ellos este vacio
+						bCheckRequired = false;
+					}
+				}
+
+				// si la variable de control es igual a falso, algun elemento no se he rellanado
+				if(!bCheckRequired){
+					// parar la ejecucion del submit para realizar la validacion en cliente
+					evt.preventDefault();
+
+					// comprobar si ya existe el elemento donde voy a mostrar el mensaje de error					
+					/*if($('#message').length > 0){
+						// mostrar						
+						$('#message').css('display', 'block');
+					} else {
+						// crear mensaje de error
+						$('<div id="message">Rellena los campos obligatorios</div>').insertBefore($(oForm));																	
+					}*/
+					
+					// bola extra
+					if($('#message').length > 0){
+						// mostrar
+						$('#message').html('Los siguientes campos: ' + sLabelCamposError + ' son obligatorios</div>');												
+					} else {
+						// crear mensaje de error
+						$('<div id="message">Los siguientes campos: ' + sLabelCamposError + ' son obligatorios</div>').insertBefore($(oForm));	
+					}																	
+				}
+			}
+			// capturar el submit del formulario
+			$(oForm).on('submit', validarCamposObligatorios);
+
+		});
+
+	</script>
+</body>
+</html>

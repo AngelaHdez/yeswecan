@@ -1,0 +1,50 @@
+<html lang="es">
+    <head>
+        <title>Validate HTML5 Form</title>
+        <meta charset="utf-8">
+        <link rel='stylesheet' href='style.css' type='text/css' media='all' />
+        <script src="http://code.jquery.com/jquery-2.0.0.js"></script>
+    <body>
+
+        <div id="success">
+            <h1>Genial! Ya eres uno de los nuestros</h1>
+        </div>
+
+        <form id="yeswecan-signup" method="post">
+            <h1>Entra en la liga Yeswecan</h1>
+            <h2>Los campos marcados con * son obligatorios</h2>
+
+            <fieldset>
+                <legend>Datos básicos</legend>
+                    <ol>
+                        <li>
+                            <label for="name">Nombre *</label>
+                            <input type="text" id="name" placeholder="Tu nombre" 
+                            name="name" title="En esta liga se necesita un nombre" required>
+                        </li>
+                        <li>
+                            <label for="age">Edad *</label>
+                            <input type="number" min="18" max="100" id="age" 
+                            name="age" title="Necesitas al menos 18 primaveras" required>
+                        </li>
+                        <li>
+                            <label for="age">Email *</label>
+                            <input type="email" placeholder="ej. god@yeswecan.com" 
+                            name="email" title="Introduce un email válido" required>
+                        </li>
+                    </ol>
+            </fieldset>
+            <fieldset>
+                <legend>Cuéntanos algo divertido</legend>
+                    <ol>
+                        <li>
+                            <textarea id="comment" placeholder="Pssst, por aquí puedes comunicarte
+                            con la liga..." name="comment" rows="5"></textarea>
+                        </li>
+                    </ol>
+            </fieldset>
+            <input type="submit" value="alehop">
+        </form>
+        <script type='text/javascript' src='validate.js'></script>
+    </body>
+</html>

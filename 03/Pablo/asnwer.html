@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML5 Validate Form</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+
+
+</head>
+<body>
+
+
+	<header>
+		
+		<div id="alertMessage" class="success message">
+			 <h3>Enhorabuena  acabamos de chutar su información!</h3>
+			 <p>Esto es solo una comprobación de lo jodido que puede llegar a ser un formulario.</p>
+			 <a href="#" class="close"></a>
+			 
+		</div>
+		
+	
+	</header>
+       
+	<section>
+	
+		<article>
+			<h1> Los siguientes datos ha sido enviados: </h1>
+			 <p>Esto es solo una comprobación de lo jodido que puede llegar a ser un formulario.</p>
+
+			<form action="answer.html " method="get"  autocomplete="on">
+				<input type="text" name="username" id="fullname"  required="required" placeholder="Tu nombre" title="Su nombre.. ¿No lo recuerdas?." /></p>
+				<input type="number" name="age" id="usersite"  placeholder="Su edad" min="18" max="85" required="required"  title="Sea sincero, ¿Cuántas privameras tienes?" /> </p>
+				<input type="email" name="usermail" id="usermail" placeholder="Email" required="required"  title="Escriba correctamente su email"  /> </p>
+				<textarea placeholder="No sea tímido, sea cual sea tu mensaje voy responderte"  ></textarea> </p>
+				<input type="submit" id="sendform" value=" ★ Enviar !" />		
+
+			</form>		
+			
+		</article>
+		
+    </section> 
+
+	
+<script>
+
+
+
+	jQuery(document).ready(function(e){
+	
+	
+    });  
+		
+     
+
+</script>
+
+
+</body>
+</html>    
