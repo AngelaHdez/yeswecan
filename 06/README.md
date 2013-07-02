@@ -2,7 +2,7 @@
 Repaso del ejercicio anterior
 =============================
 
-Continuareamo con el repaso de la tarea 04, haciéndola desde cero. 
+Continuaremos con el repaso de la tarea 04, haciéndola desde cero. 
 Daremos importancia a:
 
   - cómo organizar un problema, utilizando comentarios para describir los pasos
